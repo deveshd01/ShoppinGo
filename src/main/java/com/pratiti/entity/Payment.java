@@ -1,6 +1,5 @@
 package com.pratiti.entity;
 
-import java.io.Serializable;
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
@@ -13,8 +12,6 @@ import java.util.List;
 @Entity
 @NamedQuery(name="Payment.findAll", query="SELECT p FROM Payment p")
 public class Payment  {
-	private static final long serialVersionUID = 1L;
-
 	@Id
 	private int id;
 
